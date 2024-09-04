@@ -58,5 +58,3 @@ To set up Plausible CE quickly, follow these steps:
 ### Next steps
 
 For more information on installation, upgrades, extra configuration, and available integrations please see our [wiki.](https://github.com/plausible/community-edition/wiki)
-
-🎉 Happy hosting! 📈
