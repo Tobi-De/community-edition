@@ -3,7 +3,7 @@
 ### Prerequisites
 
 - **[Docker](https://docs.docker.com/engine/install/)** and **[Docker Compose](https://docs.docker.com/compose/install/)** must be installed on your machine.
-- **CPU:** Must support **SSE 4.2** instruction set or higher (required by ClickHouse).
+- **CPU:** Must support **SSE 4.2** or **NEON** instruction set or higher (required by ClickHouse).
 - **Memory:** At least **2 GB of RAM** is recommended for running ClickHouse efficiently.
 - **Storage:** Adequate disk space to store your ClickHouse and PostgreSQL databases, depending on your expected data volume.
 
