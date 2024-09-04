@@ -47,6 +47,8 @@ To set up Plausible CE quickly, follow these steps:
     SECRET_KEY_BASE=As0fZsJlUpuFYSthRjT5Yflg/NlxkFKPRro72xMLXF8yInZ60s6xGGXYVqml+XN1
     ```
 
+    Make sure the `$BASE_URL` is set to the actual domain where you plan to host the service. This domain must already have a corresponding DNS entry, pointing to the server's IP address, to ensure it resolves correctly.
+
 1. Start the services with Docker Compose:
 
     ```console
