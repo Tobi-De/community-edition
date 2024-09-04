@@ -53,6 +53,10 @@ To set up Plausible CE quickly, follow these steps:
     $ docker compose up -d
     ```
 
+1. Visit your instance at `$BASE_URL` and create the first user.
+
 ### Next steps
 
 For more information on installation, upgrades, extra configuration, and available integrations please see our [wiki.](https://github.com/plausible/community-edition/wiki)
+
+🎉 Happy hosting! 📈
