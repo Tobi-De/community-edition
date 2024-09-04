@@ -31,14 +31,16 @@ To set up Plausible Community Edition quickly, follow these steps:
     compose.yml
     ```
 
-1. Create and configure your environment file:
+1. Create and configure your [environment file:](https://docs.docker.com/compose/environment-variables/)
 
     ```console
     $ touch .env
+    
     $ echo "HTTP_PORT=8080" >> .env
     $ echo "HTTPS_PORT=8443" >> .env
     $ echo "BASE_URL=https://plausible.example.com:8443" >> .env
     $ echo "SECRET_KEY_BASE=$(docker run -ti --rm ghcr.io/plausible/community-edition:v2.1.2 openssl rand -base64 48)" >> .env
+    
     $ cat .env
     HTTP_PORT=8080
     HTTPS_PORT=8443
