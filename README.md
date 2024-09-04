@@ -4,7 +4,7 @@
 
 - **[Docker](https://docs.docker.com/engine/install/)** and **[Docker Compose](https://docs.docker.com/compose/install/)** must be installed on your machine.
 - **CPU** must support **SSE 4.2** or **NEON** instruction set or higher (required by ClickHouse).
-- At least **2 GB of RAM** is recommended for running ClickHouse and Plausible efficiently.
+- At least **2 GB of RAM** is recommended for running ClickHouse and Plausible without fear of OOMs.
 
 ### Quick start
 
