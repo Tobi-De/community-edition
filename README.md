@@ -38,7 +38,7 @@ To set up Plausible CE quickly, follow these steps:
     $ echo "HTTP_PORT=8080" >> .env
     $ echo "HTTPS_PORT=8443" >> .env
     $ echo "BASE_URL=https://plausible.example.com:8443" >> .env
-    $ echo "SECRET_KEY_BASE=$(docker run -ti --rm ghcr.io/plausible/community-edition:v2.1.2 openssl rand -base64 48)" >> .env
+    $ echo "SECRET_KEY_BASE=$(openssl rand -base64 48)" >> .env
     
     $ cat .env
     HTTP_PORT=8080
