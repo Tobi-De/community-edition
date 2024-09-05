@@ -58,7 +58,7 @@ To set up Plausible CE quickly, follow these steps:
 
 ### Wiki
 
-For more information on installation, [upgrades,](https://github.com/plausible/community-edition/wiki/upgrade) extra [configuration,](https://github.com/plausible/community-edition/wiki/configuration) and available [integrations](https://github.com/plausible/community-edition/wiki/integrations) please see our [wiki.](https://github.com/plausible/community-edition/wiki)
+For more information on installation, upgrades, configuration, and integrations please see our [wiki.](https://github.com/plausible/community-edition/wiki)
 
 ### Contact
 
