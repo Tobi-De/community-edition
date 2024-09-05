@@ -43,7 +43,8 @@ services:
       HTTPS_PORT: ${HTTPS_PORT}
       DATABASE_URL: postgres://postgres:postgres@plausible_db:5432/plausible_db
       CLICKHOUSE_DATABASE_URL: http://plausible_events_db:8123/plausible_events_db
-      DISABLE_REGISTRATION: true
+      DISABLE_REGISTRATION: ${DISABLE_REGISTRATION:-true}
+      LOG_LEVEL: ${LOG_LEVEL:-notice}
 
 volumes:
   db-data:
