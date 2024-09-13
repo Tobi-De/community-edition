@@ -27,14 +27,7 @@
         <ttl>event_date + INTERVAL 30 DAY DELETE</ttl>
     </asynchronous_metric_log>
 
-    <!-- 
-    Avoid the warning: "Listen [::]:9009 failed: Address family for hostname not supported". 
-    If Docker has IPv6 disabled, bind ClickHouse to IPv4 to prevent this issue. 
-    Add this to the configuration to ensure it listens on all IPv4 interfaces:
-    <listen_host>0.0.0.0</listen_host>
-    -->
-
-    <!-- Stop unnecessary logging -->
+    <!-- Stops unnecessary logging -->
     <query_thread_log remove="remove" />
     <text_log remove="remove" />
     <trace_log remove="remove" />
