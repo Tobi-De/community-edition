@@ -1,4 +1,0 @@
-<clickhouse>
-    <!-- Fixes "Listen [::]:9000 failed: Address family for hostname not supported". -->
-    <listen_host>0.0.0.0</listen_host>
-</clickhouse>
