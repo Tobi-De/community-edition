@@ -8,8 +8,6 @@
 
 ### Quick start
 
-To set up Plausible CE quickly, follow these steps:
-
 1. Clone this repository:
 
     ```console
