@@ -23,28 +23,21 @@ services:
   plausible:
     image: ghcr.io/plausible/community-edition:v2.1.2
     restart: always
-    command: sh -c "sleep 10 && /entrypoint.sh db createdb && /entrypoint.sh db migrate && /entrypoint.sh run"
+    command: sh -c "/entrypoint.sh db createdb && /entrypoint.sh db migrate && /entrypoint.sh run"
     depends_on:
       - plausible_db
       - plausible_events_db
     ports:
       # Note that setting ports opens firewall for external access.
-      # When using a reverse proxy, set to "127.0.0.1:${HTTP_PORT}:${HTTP_PORT}" to restrict access to localhost only.
       - ${HTTP_PORT}:${HTTP_PORT}
       - ${HTTPS_PORT}:${HTTPS_PORT}
     volumes:
       - plausible-data:/var/lib/plausible
     environment:
-      BASE_URL: ${BASE_URL}
-      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
-      HTTP_PORT: ${HTTP_PORT}
-      # Setting HTTPS port enables automatic issuance of TLS certificates from Let's Encrypt.
-      # Remove this if using a reverse proxy.
-      HTTPS_PORT: ${HTTPS_PORT}
-      DATABASE_URL: postgres://postgres:postgres@plausible_db:5432/plausible_db
-      CLICKHOUSE_DATABASE_URL: http://plausible_events_db:8123/plausible_events_db
-      DISABLE_REGISTRATION: ${DISABLE_REGISTRATION:-true}
-      LOG_LEVEL: ${LOG_LEVEL:-notice}
+      - BASE_URL=${BASE_URL}
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}
+      - HTTP_PORT
+      - HTTPS_PORT
 
 volumes:
   db-data:
