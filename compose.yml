@@ -44,6 +44,10 @@ services:
       - 443:443
     volumes:
       - plausible-data:/var/lib/plausible
+    ulimits:
+      nofile:
+        soft: 65535
+        hard: 65535
     environment:
       - BASE_URL=${BASE_URL}
       - SECRET_KEY_BASE=${SECRET_KEY_BASE}
