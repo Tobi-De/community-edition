@@ -1,5 +1,6 @@
 *
 !compose.yml
-!clickhouse
+!clickhouse/
+!clickhouse/**
 !README.md
 !.gitignore
