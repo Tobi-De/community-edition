@@ -33,7 +33,6 @@ To set up Plausible CE quickly, follow these steps:
 
     ```console
     $ touch .env
-    
     $ echo "BASE_URL=https://plausible.example.com" >> .env
     $ echo "SECRET_KEY_BASE=$(openssl rand -base64 48)" >> .env
     
