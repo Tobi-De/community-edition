@@ -34,14 +34,10 @@ To set up Plausible CE quickly, follow these steps:
     ```console
     $ touch .env
     
-    $ echo "HTTP_PORT=80" >> .env
-    $ echo "HTTPS_PORT=443" >> .env
     $ echo "BASE_URL=https://plausible.example.com" >> .env
     $ echo "SECRET_KEY_BASE=$(openssl rand -base64 48)" >> .env
     
     $ cat .env
-    HTTP_PORT=80
-    HTTPS_PORT=443
     BASE_URL=https://plausible.example.com
     SECRET_KEY_BASE=As0fZsJlUpuFYSthRjT5Yflg/NlxkFKPRro72xMLXF8yInZ60s6xGGXYVqml+XN1
     ```
