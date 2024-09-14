@@ -39,10 +39,6 @@ services:
         condition: service_healthy
       plausible_events_db:
         condition: service_healthy
-    ports:
-      # Note that setting ports opens firewall for external access.
-      - 80:${HTTP_PORT}
-      - 443:${HTTPS_PORT}
     volumes:
       - plausible-data:/var/lib/plausible
     ulimits:
@@ -52,8 +48,6 @@ services:
     environment:
       - BASE_URL=${BASE_URL}
       - SECRET_KEY_BASE=${SECRET_KEY_BASE}
-      - HTTP_PORT
-      - HTTPS_PORT
 
 volumes:
   db-data:
