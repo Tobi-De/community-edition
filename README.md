@@ -39,9 +39,9 @@
     SECRET_KEY_BASE=As0fZsJlUpuFYSthRjT5Yflg/NlxkFKPRro72xMLXF8yInZ60s6xGGXYVqml+XN1
     ```
 
-    Make sure `$BASE_URL` is set to the actual domain where you plan to host the service. The domain must have a DNS entry pointing to your server for proper resolution and automatic Let's Encrypt TLS certificate issuance.
+    Make sure `$BASE_URL` is set to the actual domain where you plan to host the service. The domain must have a DNS entry pointing to your server for proper resolution and automatic Let's Encrypt TLS certificate issuance. More on that in the next step.
 
-1. Expose Plausible server to the web with an [override file:](./wiki/compose-override)
+1. Expose Plausible server to the web with an [override file:](https://github.com/plausible/community-edition/wiki/compose-override)
 
     ```console
     $ cat > compose.override.yml << EOF
@@ -56,7 +56,7 @@
     EOF 
     ```
 
-    Setting `HTTP_PORT=80` and `HTTPS_PORT=443` enables automatic Let's Encrypt TLS certificate issuance. You might want to choose different values if, for example, you plan to run Plausible behind [a reverse proxy.](./wiki/reverse-proxy)
+    Setting `HTTP_PORT=80` and `HTTPS_PORT=443` enables automatic Let's Encrypt TLS certificate issuance. You might want to choose different values if, for example, you plan to run Plausible behind [a reverse proxy.](https://github.com/plausible/community-edition/wiki/reverse-proxy)
 
 1. Start the services with Docker Compose:
 
